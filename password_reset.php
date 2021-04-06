@@ -14,11 +14,7 @@
 				<input type="email" name="login_email">
 			</div>
 			<div class="form_row">
-				<label for="login_user_pass">Password</label>
-				<input type="text" name="login_user_pass">
-			</div>
-			<div class="form_row">
-				<input type="submit" value="login" class="btn btn-login" />
+				<input type="submit" value="Reset My Password" class="btn btn-login" />
 			</div>
 		</form>
 		<form action="password_reset.php" method="GET">

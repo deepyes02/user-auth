@@ -1,6 +1,7 @@
 <footer class="full_section">
 <h4>Things to do in this</h4>
 <ol>
+<li>Implement some javascript with Ajax</li>
 <li>Follow this <a href="https://www.tutorialrepublic.com/faq/how-to-change-the-cursor-into-a-hand-pointer-on-hover-using-css.php" target="_blank">tutorial</a></li>
 <li>Maintain a git repository. Add a link when done</li>
 <li>Identify and implement various authentications</li>
@@ -12,5 +13,7 @@
 </ol>
 
 </footer>
+
+<script src="script/main.js"></script>
 </body>
 </html>
