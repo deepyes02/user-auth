@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ubuntu';
+    font-weight: 100;
+    color: rgb(39, 30, 30);
+}
+
+.header_notice {
+    background-color: rgba(34, 18, 18, 0.808);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.full_section {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.menu_bar {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu_bar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.menu_bar ul li {
+    margin: 0 20px;
+}
+
+.menu_bar ul li a,
+.home_title {
+    text-decoration: none;
+    color: #FFF;
+    background: rgba(180, 168, 168, 0.219);
+    padding: 5px;
+    transition: color 0.4s ease-in;
+}
+
+.menu_bar ul li a:hover {
+    color: rgb(245, 221, 8);
+}
+
+
+/*buttons*/
+
+.main_body {
+    background: rgba(202, 205, 224, 0.548);
+    line-height: 1.6;
+}
+
+.main_body__inner {
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.main_body_title {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.interactive_section {
+    border-top: 2px solid rgba(0, 0, 0, 0.137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: rgba(8, 95, 95, 0.664);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    transition: color 0.4s ease;
+}
+
+.btn:hover {
+    color: rgba(8, 95, 95, 0.664);
+    background-color: rgba(8, 95, 95, 0.2);
+}
+
+.form_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_row input {
+    padding: 5px;
+    border: none;
+    background-color: rgba(8, 95, 95, 0.2);
+    color: black;
+    border-radius: 2px;
+}
