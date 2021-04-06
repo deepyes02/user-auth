@@ -8,12 +8,12 @@
 		</div>
 		<form action="#" method="POST">
 			<div class="form_row">
-				<label for="login_email">Email</label>
-				<input type="text" name="login_email">
+				<label for="signup_user_email">Email</label>
+				<input type="text" name="signup_user_email" id="signup_user_email">
 			</div>
 			<div class="form_row">
-				<label for="login_user_pass">Password</label>
-				<input type="text" name="login_user_pass">
+				<label for="signup_user_pass">Password</label>
+				<input type="text" name="signup_user_pass" id="signup_user_pass">
 			</div>
 			<div class="form_row">
 				<input type="submit" value="Register" class="btn btn-login" />

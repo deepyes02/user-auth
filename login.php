@@ -10,12 +10,12 @@
 		</div>
 			<form action="#" method="POST">
 				<div class="form_row">
-					<label for="login_email">Email</label>
-					<input type="text" name="login_email">
+					<label for="login_user_email">Email</label>
+					<input type="text" name="login_user_email" id="login_user_email">
 				</div>
 				<div class="form_row">
 					<label for="login_user_pass">Password</label>
-					<input type="text" name="login_user_pass">
+					<input type="text" name="login_user_pass" id="login_user_pass">
 				</div>
 				<div class="form_row">
 					<input type="submit" value="login" class="btn btn-login" />
