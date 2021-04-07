@@ -61,7 +61,7 @@ body {
     background: rgba(202, 205, 224, 0.548);
     line-height: 1.6;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .main_body__inner {
