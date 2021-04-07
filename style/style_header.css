@@ -19,7 +19,7 @@ body {
 
 .full_section {
     width: 100%;
-    padding: 0 20px;
+    padding: 25px 30px;
 }
 
 .menu_bar {
@@ -60,6 +60,8 @@ body {
 .main_body {
     background: rgba(202, 205, 224, 0.548);
     line-height: 1.6;
+    display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .main_body__inner {
@@ -113,4 +115,15 @@ body {
     background-color: rgba(8, 95, 95, 0.2);
     color: black;
     border-radius: 2px;
+}
+
+
+/*signup notification*/
+
+.signup_notification {
+    font-size: 11px;
+    font-weight: 300;
+    color: rgb(255, 2, 2);
+    padding: 2px;
+    margin: 2px;
 }
