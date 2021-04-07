@@ -1,6 +1,4 @@
 <?php
-#initialize session at the very first part of the application
-session_start();
 #include header
 include('./includes/header.php');
 
@@ -112,6 +110,10 @@ $conn->close();
 			<div class="form_row">
 				<label for="login_user_pass">Password</label>
 				<input type="password" name="login_user_pass" id="login_user_pass">
+				<script>
+				document.querySelector('#login_user_email').value="deepyes@outlook.com";
+				document.querySelector('#login_user_pass').value = "12345678";
+				</script>
 			</div>
 			<div class="form_row">
 				<input type="submit" value="login" class="btn btn-login" />

@@ -29,10 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				//if username is taken
 				if (mysqli_stmt_num_rows($stmt) == 1) {
 					$username_err = "This email is already registered.";
-				} else {//if username is new
+				} else { //if username is new
 					$username = trim($_POST['signup_user_email']);
 				}
-			} else {//any other problems with server
+			} else { //any other problems with server
 				echo "Oops! something went wrong, please try later";
 			}
 			//close statement
@@ -96,7 +96,7 @@ $conn->close();
 		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
 			<div class="form_row">
 				<label for="signup_user_email">Email</label>
-				<input type="text" name="signup_user_email" id="signup_user_email" value="<?php echo isset($_POST['signup_user_email']) ? $_POST['signup_user_email'] : ""; ?>"/>
+				<input type="text" name="signup_user_email" id="signup_user_email" value="<?php echo isset($_POST['signup_user_email']) ? $_POST['signup_user_email'] : ""; ?>" />
 				<span class="signup_notification">
 					<?php if (!empty($username_err)) {
 						echo $username_err;

@@ -1,3 +1,12 @@
+<?php
+session_start();
+//check if user is already loggin in, if so, redirect to welcome page
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+ $user_logged_in = true;
+} else $user_logged_in = false;
+
+var_dump($user_logged_in);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,9 +23,18 @@
 		<h2><a class="home_title" href="http://localhost:7070/user_authentication/">HOME</a></h2>
 		<nav id="nav">
 			<ul>
-				<li><a href="http://localhost:7070/user_authentication/login.php">Login</a></li>
-				<li><a href="http://localhost:7070/user_authentication/signup.php">Signup</a></li>
-				<li><a href="http://localhost:7070/user_authentication/logout.php">Logout</a></li>
+			<?php
+			if($user_logged_in !== true) {
+				?>
+				<li><a href="http://localhost:7070/user_authentication/login.php">Log in</a></li>
+				<li><a href="http://localhost:7070/user_authentication/signup.php">Sign up</a></li>
+				<?php
+			} else {
+				?>
+				<li><a href="logout.php">Log out</a></li>
+				<?php
+			}
+			?>				
 			</ul>
 		</nav>
 	</section>
