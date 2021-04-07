@@ -33,7 +33,7 @@
 
 	</div>
 	<div class="main_body__inner">
-		<?php include('./includes/sidebar.php');?>
+		<?php // include('./includes/sidebar.php');?>
 	</div>
 </section>
 

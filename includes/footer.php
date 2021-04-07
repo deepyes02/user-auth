@@ -1,7 +1,9 @@
 <footer class="full_section">
-<span>Any more information can be stored here</span>
+<span style="background:green;color:white;padding:2px;">Script playground</span><br><br>
+<?php
+echo "footer";
+?>
 </footer>
-
 <script src="script/main.js"></script>
 </body>
 </html>

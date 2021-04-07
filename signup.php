@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	} elseif (!empty(trim($_POST['signup_user_email'])) && !filter_var($signup_user_email, FILTER_VALIDATE_EMAIL)) {
 		$username_err = "Invalid email format (xyz@email.com)";
 	} else {
-		//prepare sql statement
+		//check database for email duplication...
 		$sql = "SELECT id FROM users WHERE username = ?";
 		if ($stmt = mysqli_prepare($conn, $sql)) {
 			//bind variable to the prepared statemetn as params
@@ -26,14 +26,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			if (mysqli_stmt_execute($stmt)) {
 				//store result
 				mysqli_stmt_store_result($stmt);
-				//check if username is taken
+				//if username is taken
 				if (mysqli_stmt_num_rows($stmt) == 1) {
 					$username_err = "This email is already registered.";
-				} else {
+				} else {//if username is new
 					$username = trim($_POST['signup_user_email']);
-					echo $username;
 				}
-			} else {
+			} else {//any other problems with server
 				echo "Oops! something went wrong, please try later";
 			}
 			//close statement
