@@ -1,6 +1,7 @@
 <div class="full_section">
-	<h4>Things to do in this</h4>
+	<h4><strike>Knowledge</strike> power is power</h4>
 	<ol>
+	<li>Learn php sessions</li>
 		<li>Show how old the account is on log in page</li>
 		<li>Show how many users use the app in homepage</li>
 		<li>Maintain a git repository.</li>

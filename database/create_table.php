@@ -6,7 +6,6 @@ $conn = new mysqli("localhost", "root", "736852", "learn_php");
 if ($conn -> connect_error){
 	die("failed to connect to the database: " . $conn->connect_error);
 } else {
-	echo "database connected<br>";
 	$sql = "CREATE TABLE IF NOT EXISTS users (
 		id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 		username VARCHAR(50) NOT NULL UNIQUE,
@@ -16,7 +15,7 @@ if ($conn -> connect_error){
 	";
 	//EXECUTE AND CHECK IF QUERY IS SUCCESSFUL
 	if($conn->query($sql) === TRUE) {
-		echo "sql -> CREATE TABLE IF NOT EXISTS users";
+		return;
 	} else {
 		//any error
 		echo $conn->error;
