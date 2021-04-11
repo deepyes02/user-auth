@@ -1,7 +1,5 @@
 <?php include('./includes/header.php'); ?>
-<section class="header_notice">
-	<span>If !user logged in -> show login and signup<br>else -> show logout only</span>
-</section>
+
 <section class="full_section main_body">
 	<div class="main_body__inner">
 		<div class="main_body_title">

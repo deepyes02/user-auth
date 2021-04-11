@@ -1,5 +1,11 @@
 <?php
 include('./includes/header.php');
+
+//check if user is already logged in, if so, redirect to welcome page
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+	header("location: welcome.php");
+	exit;
+}
 //database connection and user table creation script import
 echo '<div class="full_section">';
 require_once('./database/create_table.php');

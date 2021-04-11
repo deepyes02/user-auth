@@ -1,17 +1,20 @@
 <?php 
-$user_id = $_SESSION['id'];
-$user_name = $_SESSION['username'];
+include('./includes/header.php');
 
-if(empty($user_id) || $user_id = ""){
-	//redirect user to home page
-	header("location: index.php");
+$username = $_SESSION['username'];
+$user_id = $_SESSION['id'];
+
+if(empty($user_id) || $user_id == "") {
+	// header("location: welcome.php");
+	header('location: index.php');
 }
 
-include('./includes/header.php'); ?>
+?>
+
 <section class="full_section main_body">
 	<div class="main_body__inner">
 		<div class="main_body_title">
-			<h2>Welcome <?php echo $user_name;?></h2>
+			<h2>Welcome <?php echo $_SESSION['username']?></h2>
 			<p>You are logged in</p>
 		</div>
 		<div class="interactive_section">

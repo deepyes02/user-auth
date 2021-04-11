@@ -2,7 +2,7 @@
 #include header
 include('./includes/header.php');
 
-//check if user is already loggin in, if so, redirect to welcome page
+//check if user is already logged in, if so, redirect to welcome page
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	header("location: welcome.php");
 	exit;
@@ -87,15 +87,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				//close statement
 				mysqli_stmt_close($stmt);
 			}
-		} 
+		}
 	}
 }
 $conn->close();
 ?>
 
-<section class="header_notice">
-	<span>If !user logged in -> show login and signup<br>else -> show logout only</span>
-</section>
 <section class="full_section main_body">
 	<div class="main_body__inner">
 		<div class="main_body_title">
@@ -111,8 +108,8 @@ $conn->close();
 				<label for="login_user_pass">Password</label>
 				<input type="password" name="login_user_pass" id="login_user_pass">
 				<script>
-				document.querySelector('#login_user_email').value="deepyes@outlook.com";
-				document.querySelector('#login_user_pass').value = "12345678";
+					document.querySelector('#login_user_email').value = "deepyes@outlook.com";
+					document.querySelector('#login_user_pass').value = "12345678";
 				</script>
 			</div>
 			<div class="form_row">
