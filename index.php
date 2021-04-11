@@ -1,9 +1,9 @@
 <?php include('./includes/header.php'); 
-//DEFINE CONSTANTS TO BE USED
+//This isn't any useful just for example, can delete
+//define a constant
 DEFINE('HOME_URL', __DIR__);
+//save it as a session
 $_SESSION['HOME_URL'] = HOME_URL;
-echo HOME_URL;
-
 ?>
 
 <section class="full_section main_body">

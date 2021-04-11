@@ -4,6 +4,6 @@
 //scripts
 ?>
 </footer>
-<script src="script/main.js"></script>
+<script src="<?php echo $root . 'user_authentication/script/main.js'?>"></script>
 </body>
 </html>

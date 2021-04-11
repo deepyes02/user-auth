@@ -22,7 +22,11 @@ session_start();
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>User_Authentication</title>
-	<link rel="stylesheet" href="style/style_header.css">
+	<?php
+	//dynamically inject stylesheets
+	$root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
+	?>
+	<link rel="stylesheet" href="<?php echo $root . '/user_authentication/style/style_header.css';?>">
 </head>
 <body>
 	<section class="full_section menu_bar">
@@ -48,7 +52,7 @@ session_start();
 							?>
 						</ul>
 					</li>
-					<li class="single_menu"><a href="#">Add Trip</a>
+					<li class="single_menu"><a href="http://localhost:7070/user_authentication/trips/add_trip.php">Add Trip</a>
 					<li class="single_menu"><a href="#">Show Trips</a>
 				</ul>
 			</nav>
