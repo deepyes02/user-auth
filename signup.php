@@ -7,7 +7,6 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	exit;
 }
 //database connection and user table creation script import
-echo '<div class="full_section">';
 require_once('./database/create_table.php');
 
 //4 variables to capture POST DATA, plus any errors
@@ -85,14 +84,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		}
 	}
 	//main if block ends here
-} else {
-	//nothing happens here
-	echo "Noone has registered yet";
 }
-//close mysqli connection
 $conn->close();
 ?>
-</div>
 <section class="full_section main_body">
 	<div class="main_body__inner">
 		<div class="main_body_title">

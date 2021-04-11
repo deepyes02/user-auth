@@ -8,9 +8,7 @@ if(empty($user_id) || $user_id == "") {
 	// header("location: welcome.php");
 	header('location: index.php');
 }
-
 ?>
-
 <section class="full_section main_body">
 	<div class="main_body__inner">
 		<div class="main_body_title">

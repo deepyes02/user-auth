@@ -102,11 +102,11 @@ $conn->close();
 		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
 			<div class="form_row">
 				<label for="login_user_email">Email</label>
-				<input type="text" name="login_user_email" id="login_user_email" value="<?php echo isset($login_user_email) ? $login_user_email : ''; ?>">
+				<input type="text" name="login_user_email" autocomplete="username" id="login_user_email" value="<?php echo isset($login_user_email) ? $login_user_email : ''; ?>">
 			</div>
 			<div class="form_row">
 				<label for="login_user_pass">Password</label>
-				<input type="password" name="login_user_pass" id="login_user_pass">
+				<input type="password" name="login_user_pass" id="login_user_pass" autocomplete="current-password">
 				<script>
 					document.querySelector('#login_user_email').value = "deepyes@outlook.com";
 					document.querySelector('#login_user_pass').value = "12345678";
